@@ -16,12 +16,12 @@
 }
 
 .trayectoria-index {
-    text-align: center;
+    text-align: $aling;
     padding-top: 35px;
-    font-family: 'DM Sans', sans-serif;
-    background-color:rgb(238, 232, 232);
+    font-family: $fonts;
+    background-color: $bgcolor;
     @media screen and (min-width: 800px){
-        font-size: 20px;
+        font-size: map-get($orden, letra-media);
         padding: 40px 250px 0px 250px;
     }
     .trayectoria-index-text{
@@ -50,9 +50,9 @@
     position: relative;
     overflow: hidden;
     background-color: transparent;
-    text-align: center;
+    text-align: $aling;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: map-get($orden, letra-chica);
     transition: .3s;
     z-index: 1;
     font-family: inherit;
@@ -91,7 +91,7 @@
 }
 
 .nosotros-imagen {
-    text-align: center;
+    text-align: $aling;
     img {
         width: 300px;
         height: auto;
@@ -122,22 +122,21 @@
 }
 
 .titulo-destino {
-    text-align: justify;
-    font-family: 'DM Sans', sans-serif;
+    text-align: map-get($orden, justificado);
+    font-family: $fonts;
     @media screen and (min-width: 800px){
-        font-size: 20px;
-        margin-top: 50px;
+        @include tamaño-margen;
         padding: 0px 250px 0px 250px;
 
     }
     h1{
-        text-align: center;
+        text-align: $aling;
     }
 }
 
 .galeria-titulo {
-    font-family: 'DM Sans', sans-serif;
-    text-align: center; 
+    font-family: $fonts;
+    text-align: $aling; 
     margin-top: 50px; 
 }
 
@@ -148,7 +147,7 @@
     margin-right: -15px;
     @media screen and (min-width: 800px){
         width: 80%;
-        margin: auto;
+        margin: map-get($orden, margen);
         margin-top: 50px;
     }
     .cont-imagen {
@@ -156,7 +155,7 @@
         padding: 10px;
         @media screen and (min-width: 800px){
             max-width: 27%;
-            margin: auto;
+            margin: map-get($orden, margen);
             img:hover{ 
                 transform: scale(1.3);
                 transition: all 0.7s;
@@ -169,9 +168,9 @@
 }
 
 .video-destino {
-    text-align: center;
+    text-align: $aling;
     padding: 100px 0px 100px 0px;
-    background-color:rgb(238, 232, 232);
+    background-color: $bgcolor;
     iframe {
         width: 95%;
         height: 320px;
@@ -183,8 +182,8 @@
 }
 
 .promociones-titulo {
-        text-align: center;
-        font-family: 'DM Sans', sans-serif;
+        text-align: $aling;
+        font-family: $fonts;
         font-size: 45px;
         padding-top: 25px;
 }
@@ -197,7 +196,7 @@
     .card {
         width: 280px;
         height: 410px;
-        margin: auto;
+        margin: map-get($orden, margen);
         margin-top: 30px;
         margin-bottom: 40px;
         background: rgb(255, 255, 255);
@@ -219,21 +218,20 @@
 /* COMIENZO DE MAIN CONTACTO */
 .contacto{
     text-align: justify;
-    font-family: 'DM Sans', sans-serif;
+    font-family: $fonts;
     @media screen and (min-width: 800px){
-        font-size: 20px;
-        margin-top: 50px;
+        @include tamaño-margen;
         padding: 0px 250px 0px 250px;
 
     }
     h1{
-        text-align: center;
+        text-align: $aling;
     }
 }
 
 .contacto-redes{
-    text-align: center;
-    background-color:rgb(245,239,239);
+    text-align: $aling;
+    background-color: $bgcolor;
     padding: 15px 0px 15px 0px; 
 }
 
@@ -243,15 +241,15 @@
 
 .contacto-mapa{
     margin-top: 20px;
-    text-align: center;
+    text-align: $aling;
     h2{
-        text-align: center;
+        text-align: $aling;
     }
     iframe{
         width: 99%;
         height: 350px;
         @media screen and (min-width: 800px){
-            margin: auto;
+            margin: map-get($orden, margen);
             width: 40%;
             height: 400px;
         }
@@ -261,30 +259,29 @@
 
 /* COMIENZO DE MAIN NOSOTROS */
 .nosotros-texto{
-    text-align: justify;
-    font-family: 'DM Sans', sans-serif;
+    text-align: map-get($orden,justificado);
+    font-family: $fonts;
     @media screen and (min-width: 800px){
-        font-size: 20px;
-        margin-top: 50px;
+        @include tamaño-margen;
         padding: 0px 250px 0px 250px;
 
     }
     h1{
-        text-align: center;
+        text-align: $aling;
     }
 }
 
 .nosotros-servicio-icons{
-    text-align: center;
-    background-color:rgb(245,239,239);
+    text-align: $aling;
+    background-color: $bgcolor;
     @media screen and (min-width: 800px){
         display: flex;
         justify-content: center;
-        text-align: center;
+        text-align: $aling;
         span{
             padding: 20px 35px 20px 35px;
             p{
-                font-size: 20px;
+                font-size: map-get($orden, letra-media);
             }
         }
     }
@@ -319,7 +316,7 @@
 }
 
 .form__section {
-    text-align: center;
+    text-align: $aling;
     margin-top: 50px;
     padding-top: 10px;
     textarea{
@@ -329,11 +326,11 @@
 
 .form_input {
     width: 99%;
-    background-color:rgb(245,239,239);
-    margin: auto;
+    background-color: $bgcolor;
+    margin: map-get($orden, margen);
     padding-top: 5px;
     padding-bottom: 10px;
-    text-align: center;
+    text-align: $aling;
     @media screen and (min-width: 800px){
         width: 40%;
     }
@@ -341,10 +338,10 @@
 
 .form {
     h1 {
-        text-align: center;
-        color: white;
+        text-align: $aling;
+        color: map-get($orden, blanco);
         margin: 30px;
-        font-family: 'DM Sans', sans-serif;
+        font-family: $fonts;
     }
 }
 
@@ -355,9 +352,9 @@
     position: relative;
     overflow: hidden;
     background-color: transparent;
-    text-align: center;
+    text-align: $aling;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: map-get($orden, letra-chica);
     transition: .3s;
     z-index: 1;
     font-family: inherit;
@@ -383,6 +380,6 @@
 }
    
 .boton-cotizador:hover {
-    color: white;
+    color: map-get($orden, blanco);
 }
 /* FIN DE MAIN COTIZADOR */

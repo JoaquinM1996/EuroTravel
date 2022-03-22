@@ -40,7 +40,7 @@ nav {
 .trayectoria-index {
   text-align: center;
   padding-top: 35px;
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   background-color: #eee8e8; }
   @media screen and (min-width: 800px) {
     .trayectoria-index {
@@ -126,7 +126,7 @@ nav {
 
 .titulo-destino {
   text-align: justify;
-  font-family: 'DM Sans', sans-serif; }
+  font-family: "DM Sans", sans-serif; }
   @media screen and (min-width: 800px) {
     .titulo-destino {
       font-size: 20px;
@@ -136,7 +136,7 @@ nav {
     text-align: center; }
 
 .galeria-titulo {
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   text-align: center;
   margin-top: 50px; }
 
@@ -177,7 +177,7 @@ nav {
 
 .promociones-titulo {
   text-align: center;
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 45px;
   padding-top: 25px; }
 
@@ -207,7 +207,7 @@ nav {
 /* COMIENZO DE MAIN CONTACTO */
 .contacto {
   text-align: justify;
-  font-family: 'DM Sans', sans-serif; }
+  font-family: "DM Sans", sans-serif; }
   @media screen and (min-width: 800px) {
     .contacto {
       font-size: 20px;
@@ -218,7 +218,7 @@ nav {
 
 .contacto-redes {
   text-align: center;
-  background-color: #f5efef;
+  background-color: #eee8e8;
   padding: 15px 0px 15px 0px; }
 
 .icono {
@@ -242,7 +242,7 @@ nav {
 /* COMIENZO DE MAIN NOSOTROS */
 .nosotros-texto {
   text-align: justify;
-  font-family: 'DM Sans', sans-serif; }
+  font-family: "DM Sans", sans-serif; }
   @media screen and (min-width: 800px) {
     .nosotros-texto {
       font-size: 20px;
@@ -253,7 +253,7 @@ nav {
 
 .nosotros-servicio-icons {
   text-align: center;
-  background-color: #f5efef; }
+  background-color: #eee8e8; }
   @media screen and (min-width: 800px) {
     .nosotros-servicio-icons {
       display: flex;
@@ -297,7 +297,7 @@ nav {
 
 .form_input {
   width: 99%;
-  background-color: #f5efef;
+  background-color: #eee8e8;
   margin: auto;
   padding-top: 5px;
   padding-bottom: 10px;
@@ -310,7 +310,7 @@ nav {
   text-align: center;
   color: white;
   margin: 30px;
-  font-family: 'DM Sans', sans-serif; }
+  font-family: "DM Sans", sans-serif; }
 
 .boton-cotizador {
   margin-bottom: 20px;
