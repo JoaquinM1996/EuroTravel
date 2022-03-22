@@ -1,0 +1,388 @@
+/* COMIENZO MAIN INDEX */
+.carousel-item img {
+    width: 99%;
+    height: 300px;
+    @media screen and (min-width: 800px){
+        height: 550px;
+    }
+}
+
+.carousel {
+    width: 100%;
+}
+
+.bordes-carousel {
+    padding: 0px;
+}
+
+.trayectoria-index {
+    text-align: center;
+    padding-top: 35px;
+    font-family: 'DM Sans', sans-serif;
+    background-color:rgb(238, 232, 232);
+    @media screen and (min-width: 800px){
+        font-size: 20px;
+        padding: 40px 250px 0px 250px;
+    }
+    .trayectoria-index-text{
+        text-align: justify;
+    }
+    .trayectoria-index-icons{
+        @media screen and (min-width: 800px){
+            display: flex;
+            justify-content: center;
+            span{
+                padding: 0px 35px 20px 35px;
+            }
+        }
+    }
+}
+
+.bi {
+    font-size: 50px;
+    padding: 25px;
+}
+
+.boton-index {
+    margin-bottom: 20px;
+    padding: 0.8em 1.8em;
+    border: 2px solid black;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}
+   
+.boton-index::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: black;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+   
+.boton-index:hover::before {
+    width: 105%;
+}
+   
+.boton-index a:hover {
+    color: white;
+}
+/* FIN MAIN INDEX */
+
+/* COMIENZO MAIN NOSOTROS */ 
+.nosotros-texto {
+    text-align: justify;
+}
+
+.nosotros-imagen {
+    text-align: center;
+    img {
+        width: 300px;
+        height: auto;
+    }
+}
+/* FIN DE MAIN NOSOTROS */ 
+
+
+/* COMIENZO MAIN DESTINOS */
+.bandera-ing {
+    height: 2px;
+    background: linear-gradient(90deg, rgba(46,0,255,1) 15%, rgba(255,255,255,1) 30%, rgba(255,0,0,1) 50%, rgba(255,255,255,1) 70%, rgba(46,0,255,1) 85%);
+}
+
+.bandera-esp{
+    height: 2px;
+    background: linear-gradient(90deg, rgba(245,0,0,1) 27%, rgba(252,218,13,1) 50%, rgba(245,0,0,1) 73%);
+}
+
+.bandera-fran {
+    height: 2px;
+    background: linear-gradient(90deg, rgba(0,5,232,1) 27%, rgba(247,247,247,1) 50%, rgba(245,0,0,1) 73%);
+}
+
+.bandera-it{
+    height: 2px;
+    background: linear-gradient(90deg, rgba(32,208,4,1) 27%, rgba(247,247,247,1) 50%, rgba(245,0,0,1) 73%);
+}
+
+.titulo-destino {
+    text-align: justify;
+    font-family: 'DM Sans', sans-serif;
+    @media screen and (min-width: 800px){
+        font-size: 20px;
+        margin-top: 50px;
+        padding: 0px 250px 0px 250px;
+
+    }
+    h1{
+        text-align: center;
+    }
+}
+
+.galeria-titulo {
+    font-family: 'DM Sans', sans-serif;
+    text-align: center; 
+    margin-top: 50px; 
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    @media screen and (min-width: 800px){
+        width: 80%;
+        margin: auto;
+        margin-top: 50px;
+    }
+    .cont-imagen {
+        max-width: 33,33%;
+        padding: 10px;
+        @media screen and (min-width: 800px){
+            max-width: 27%;
+            margin: auto;
+            img:hover{ 
+                transform: scale(1.3);
+                transition: all 0.7s;
+            }
+        }
+}
+    img {
+    width: 100%;
+}
+}
+
+.video-destino {
+    text-align: center;
+    padding: 100px 0px 100px 0px;
+    background-color:rgb(238, 232, 232);
+    iframe {
+        width: 95%;
+        height: 320px;
+        @media screen and (min-width: 800px){
+            width: 50%;
+            height: 500px;
+        }
+    }
+}
+
+.promociones-titulo {
+        text-align: center;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 45px;
+        padding-top: 25px;
+}
+
+.promociones {
+     @media screen and (min-width: 800px){
+         display: flex;
+    }
+
+    .card {
+        width: 280px;
+        height: 410px;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 40px;
+        background: rgb(255, 255, 255);
+        border-radius: 0.4em;
+        box-shadow: 0.3em 0.3em 0.7em #00000015;
+        transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        border: rgb(250, 250, 250) 0.2em solid;
+    }
+   
+   .card:hover {
+        border: gray 0.2em solid;
+    }
+}
+.btn-primary {
+    background-color: black;
+}
+/* FIN DE MAIN DESTINOS */
+
+/* COMIENZO DE MAIN CONTACTO */
+.contacto{
+    text-align: justify;
+    font-family: 'DM Sans', sans-serif;
+    @media screen and (min-width: 800px){
+        font-size: 20px;
+        margin-top: 50px;
+        padding: 0px 250px 0px 250px;
+
+    }
+    h1{
+        text-align: center;
+    }
+}
+
+.contacto-redes{
+    text-align: center;
+    background-color:rgb(245,239,239);
+    padding: 15px 0px 15px 0px; 
+}
+
+.icono {
+    color: black;
+}
+
+.contacto-mapa{
+    margin-top: 20px;
+    text-align: center;
+    h2{
+        text-align: center;
+    }
+    iframe{
+        width: 99%;
+        height: 350px;
+        @media screen and (min-width: 800px){
+            margin: auto;
+            width: 40%;
+            height: 400px;
+        }
+    }
+}
+/* FIN DE MAIN CONTACTO */
+
+/* COMIENZO DE MAIN NOSOTROS */
+.nosotros-texto{
+    text-align: justify;
+    font-family: 'DM Sans', sans-serif;
+    @media screen and (min-width: 800px){
+        font-size: 20px;
+        margin-top: 50px;
+        padding: 0px 250px 0px 250px;
+
+    }
+    h1{
+        text-align: center;
+    }
+}
+
+.nosotros-servicio-icons{
+    text-align: center;
+    background-color:rgb(245,239,239);
+    @media screen and (min-width: 800px){
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        span{
+            padding: 20px 35px 20px 35px;
+            p{
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.nosotros-imagen{
+    margin-top: 25px;
+    img {
+        padding: 10px;
+        @media screen and (min-width: 800px){
+            width: 500px;
+        }
+    }
+}
+/* FIN DE MAIN NOSOTROS */
+
+/* COMIENZO MAIN COTIZACIONES */
+.body-bg{
+    background-image: url(../assets/img/city.jpg);
+}
+
+.input {
+    width: 300px;
+    background: transparent;
+    border: none;
+    border-bottom: solid gray;
+    outline: none;
+    font-family: sans-serif;
+    @media screen and (min-width: 800px){
+        width: 500px;
+    }
+}
+
+.form__section {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 10px;
+    textarea{
+        resize: none;
+    }    
+}
+
+.form_input {
+    width: 99%;
+    background-color:rgb(245,239,239);
+    margin: auto;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    text-align: center;
+    @media screen and (min-width: 800px){
+        width: 40%;
+    }
+}
+
+.form {
+    h1 {
+        text-align: center;
+        color: white;
+        margin: 30px;
+        font-family: 'DM Sans', sans-serif;
+    }
+}
+
+.boton-cotizador {
+    margin-bottom: 20px;
+    padding: 0.8em 1.8em;
+    border: 2px solid black;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: black;
+}
+   
+.boton-cotizador::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: black;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+   
+.boton-cotizador:hover::before {
+    width: 105%;
+}
+   
+.boton-cotizador:hover {
+    color: white;
+}
+/* FIN DE MAIN COTIZADOR */
