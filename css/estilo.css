@@ -37,6 +37,9 @@ nav {
 .bordes-carousel {
   padding: 0px; }
 
+.row {
+  overflow: hidden; }
+
 .trayectoria-index {
   text-align: center;
   padding-top: 35px;
@@ -340,18 +343,18 @@ footer {
 /* GRILLA MOBILE */
 #grilla-contacto {
   display: grid;
-  grid-template-areas: "header" "main" "footer";
+  grid-template-areas: "header-contacto" "main-contacto" "foot_bac";
   grid-template-rows: 1fr 80% 1fr;
   grid-template-columns: auto; }
 
-header {
-  grid-area: header; }
+.header-contacto {
+  grid-area: header-contacto; }
 
-main {
-  grid-area: main; }
+.main-contacto {
+  grid-area: main-contacto; }
 
-footer {
-  grid-area: footer; }
+.foot_bac {
+  grid-area: foot_bac; }
 
 /* HEADER Y NAV */
 .logo-nav-container {
@@ -475,15 +478,15 @@ a {
 @media (min-width: 1024px) {
   #grilla-contacto {
     display: grid;
-    grid-template-areas: "header" "main" "footer";
+    grid-template-areas: "header-contacto" "main-contacto" "foot_bac";
     grid-template-rows: 1fr 80% 1fr;
     grid-template-columns: auto; }
-  header {
-    grid-area: header; }
-  main {
-    grid-area: main; }
-  footer {
-    grid-area: footer; }
+  .header-contacto {
+    grid-area: header-contacto; }
+  .main-contacto {
+    grid-area: main-contacto; }
+  .foot_bac {
+    grid-area: foot_bac; }
   .logo-nav-container {
     display: flex; }
   .drop-down .dropbtn {
