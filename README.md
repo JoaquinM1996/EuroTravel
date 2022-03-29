@@ -1,1 +1,3 @@
-Implementacion de sass
+Proyecto final EuroTravel. 
+Joaquin Montenegro
+joakin.f.montenegro@gmail.com
