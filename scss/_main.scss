@@ -192,6 +192,9 @@
      @media screen and (min-width: 800px){
          display: flex;
     }
+    .promociones-card {
+        margin: map-get($orden, margen);
+    }
 
     .card {
         width: 280px;
@@ -215,47 +218,7 @@
 }
 /* FIN DE MAIN DESTINOS */
 
-/* COMIENZO DE MAIN CONTACTO */
-.contacto{
-    text-align: justify;
-    font-family: $fonts;
-    @media screen and (min-width: 800px){
-        @include tamaño-margen;
-        padding: 0px 250px 0px 250px;
 
-    }
-    h1{
-        text-align: $aling;
-    }
-}
-
-.contacto-redes{
-    text-align: $aling;
-    background-color: $bgcolor;
-    padding: 15px 0px 15px 0px; 
-}
-
-.icono {
-    color: black;
-}
-
-.contacto-mapa{
-    margin-top: 20px;
-    text-align: $aling;
-    h2{
-        text-align: $aling;
-    }
-    iframe{
-        width: 99%;
-        height: 350px;
-        @media screen and (min-width: 800px){
-            margin: map-get($orden, margen);
-            width: 40%;
-            height: 400px;
-        }
-    }
-}
-/* FIN DE MAIN CONTACTO */
 
 /* COMIENZO DE MAIN NOSOTROS */
 .nosotros-texto{

@@ -185,6 +185,9 @@ nav {
   .promociones {
     display: flex; } }
 
+.promociones .promociones-card {
+  margin: auto; }
+
 .promociones .card {
   width: 280px;
   height: 410px;
@@ -204,41 +207,6 @@ nav {
   background-color: black; }
 
 /* FIN DE MAIN DESTINOS */
-/* COMIENZO DE MAIN CONTACTO */
-.contacto {
-  text-align: justify;
-  font-family: "DM Sans", sans-serif; }
-  @media screen and (min-width: 800px) {
-    .contacto {
-      font-size: 20px;
-      margin-top: 50px;
-      padding: 0px 250px 0px 250px; } }
-  .contacto h1 {
-    text-align: center; }
-
-.contacto-redes {
-  text-align: center;
-  background-color: #eee8e8;
-  padding: 15px 0px 15px 0px; }
-
-.icono {
-  color: black; }
-
-.contacto-mapa {
-  margin-top: 20px;
-  text-align: center; }
-  .contacto-mapa h2 {
-    text-align: center; }
-  .contacto-mapa iframe {
-    width: 99%;
-    height: 350px; }
-    @media screen and (min-width: 800px) {
-      .contacto-mapa iframe {
-        margin: auto;
-        width: 40%;
-        height: 400px; } }
-
-/* FIN DE MAIN CONTACTO */
 /* COMIENZO DE MAIN NOSOTROS */
 .nosotros-texto {
   text-align: justify;
@@ -365,3 +333,179 @@ footer {
   text-align: end; }
 
 /* FIN FOOTER */
+.body-css {
+  margin: 0px;
+  padding: 0px; }
+
+/* GRILLA MOBILE */
+#grilla-contacto {
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-rows: 1fr 80% 1fr;
+  grid-template-columns: auto; }
+
+header {
+  grid-area: header; }
+
+main {
+  grid-area: main; }
+
+footer {
+  grid-area: footer; }
+
+/* HEADER Y NAV */
+.logo-nav-container {
+  width: 100%;
+  display: inline-block;
+  justify-content: space-between;
+  background-color: #eee8e8;
+  border-bottom: solid 2px gray; }
+
+.logo {
+  justify-self: start;
+  font-family: 'Lobster', cursive;
+  font-size: 40px;
+  padding-left: 10px; }
+
+.nav__item {
+  display: inline;
+  padding: 30px;
+  font-family: 'Fredoka', sans-serif; }
+
+.nav__item:hover {
+  color: black; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+.nav-css {
+  border: none; }
+  .nav-css a {
+    float: left;
+    font-size: 11px;
+    color: gray;
+    text-align: center;
+    padding: 13px 15px;
+    text-decoration: none; }
+
+.nav-bar a:hover {
+  color: black; }
+
+.drop-down {
+  float: left;
+  overflow: hidden; }
+
+.drop-down .dropbtn {
+  font-size: 11px;
+  border: none;
+  outline: none;
+  color: gray;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: 'Fredoka', sans-serif;
+  margin: 0; }
+
+.drop-down .dropbtn:hover {
+  color: black; }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1; }
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left; }
+
+.dropdown-content a:hover {
+  background-color: #ddd; }
+
+.drop-down:hover .dropdown-content {
+  display: block; }
+
+/* fin de header y nav */
+.contacto-titulo {
+  text-align: center;
+  font-family: 'DM Sans', sans-serif; }
+  .contacto-titulo hr {
+    width: 60%;
+    margin-top: -15px; }
+
+.contacto-texto {
+  font-family: 'DM Sans', sans-serif;
+  text-align: center; }
+
+.contacto-iconos {
+  text-align: center;
+  background-color: #eee8e8; }
+
+.fa-brands {
+  font-size: 3em;
+  padding: 10px; }
+
+.contacto-mapa {
+  text-align: center;
+  font-family: 'DM Sans', sans-serif; }
+  .contacto-mapa iframe {
+    width: 90%;
+    height: 400px;
+    padding-top: 20px; }
+
+.foot_bac {
+  background-color: #eee8e8; }
+
+.logo-foot {
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  font-size: 25px; }
+
+.text-foot {
+  font-family: 'DM Sans', sans-serif;
+  text-align: end; }
+
+/* INICIO VISTA DESKTOP */
+@media (min-width: 1024px) {
+  #grilla-contacto {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-rows: 1fr 80% 1fr;
+    grid-template-columns: auto; }
+  header {
+    grid-area: header; }
+  main {
+    grid-area: main; }
+  footer {
+    grid-area: footer; }
+  .logo-nav-container {
+    display: flex; }
+  .drop-down .dropbtn {
+    font-size: 17px; }
+  .nav-css a {
+    font-size: 17px; }
+  .logo {
+    justify-self: start;
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+    padding: 20px;
+    padding-left: 50px; }
+  .nav-css {
+    padding: 20px; }
+  .contacto-titulo {
+    font-size: 20px; }
+  .contacto-texto {
+    font-size: 18px; }
+  .fa-brands:hover {
+    color: #4646df; }
+  .contacto-mapa {
+    font-size: 20px; }
+  .contacto-mapa iframe {
+    width: 45%;
+    height: 500px; } }

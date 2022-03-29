@@ -4,34 +4,30 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+    <meta name="description" content="Somos una empresa especializada en turimo europeo">
+    <meta name="keywords" content="VIAJES, TURISMO, ESPAÑA, INGLATERRA, FRANCIA, ITALIA, EUROPA, VUELOS">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     
     <title>EuroTravel</title>
-        
+    <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Lobster&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Fredoka:wght@500&family=Lobster&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- CSS -->
     <link rel="stylesheet" href="css/estilo.css">
   </head>
   <body>
     <!--COMIENZO DE NAV-->
     <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="#">EuroTravel</a>
+      <a class="navbar-brand" href="index.html">EuroTravel</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -43,10 +39,10 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">Destinos</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="views/barcelona.html">España</a>
-              <a class="dropdown-item" href="views/londres.html">Inglaterra</a>
-              <a class="dropdown-item" href="views/roma.html">Italia</a>
-              <a class="dropdown-item" href="views/paris.html">Francia</a>
+              <a class="dropdown-item" href="views/españa.html">España</a>
+              <a class="dropdown-item" href="views/inglaterra.html">Inglaterra</a>
+              <a class="dropdown-item" href="views/italia.html">Italia</a>
+              <a class="dropdown-item" href="views/francia.html">Francia</a>
             </div>
            </li>
           <li class="nav-item">
@@ -76,16 +72,16 @@
                 </ol>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="assets/img/españa6.jpg" class="d-block w-100" alt="...">
+                    <img src="assets/img/españa6.jpg" class="d-block w-100" alt="Atardecer en las calles de España">
                   </div>
                   <div class="carousel-item">
-                    <img src="assets/img/londres-index.jpg" class="d-block w-100" alt="...">
+                    <img src="assets/img/londres-index.jpg" class="d-block w-100" alt="Puente de la torre en inglaterra">
                   </div>
                   <div class="carousel-item">
-                    <img src="assets/img/roma-index.jpg" class="d-block w-100" alt="...">
+                    <img src="assets/img/roma-index.jpg" class="d-block w-100" alt="Coliceo romano">
                   </div>
                   <div class="carousel-item">
-                    <img src="assets/img/torre2.jpg" class="d-block w-100" alt="...">
+                    <img src="assets/img/torre2.jpg" class="d-block w-100" alt="Torre eiffel">
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
@@ -119,36 +115,44 @@
             </div>
           </div>
           <div class="row promociones">
-            <div class="card" style="width: 18rem;">
-              <img src="assets/img/España2.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">España/Francia</h5>
-                <p class="card-text">13 Noches (6 noches en Francia y 7 noches en España)<br>Hotel 4 estrellas, con desayuno. <br> *2 excurciones a eleccion.</p>
-                <a href="#" class="btn btn-primary">Reservar</a>
+            <div class="col-12 col-md-3" data-aos="zoom-out">
+              <div class="card" style="width: 18rem;">
+                <img src="assets/img/España2.jpg" class="card-img-top" alt="Madrid">
+                <div class="card-body">
+                  <h5 class="card-title">España/Francia</h5>
+                  <p class="card-text">13 Noches (6 noches en Francia y 7 noches en España)<br>Hotel 4 estrellas, con desayuno. <br> *2 excurciones a eleccion.</p>
+                  <a href="views/cotizaciones.html" class="btn btn-primary">Reservar</a>
+                </div>
               </div>
             </div>
-            <div class="card" style="width: 18rem;">
-              <img src="assets/img/londres4.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Londres/Francia</h5>
-                <p class="card-text">13 Noches (5 noches en Francia y 8 noches en Inglaterra)<br>Hotel 4 estrellas, con desayuno. <br> *2 excurciones a eleccion.</p>
-                <a href="#" class="btn btn-primary">Reservar</a>
+            <div class="col-12 col-md-3" data-aos="zoom-out">
+              <div class="card" style="width: 18rem;">
+                <img src="assets/img/londres4.jpg" class="card-img-top" alt="Cabina telefonica de londres">
+                <div class="card-body">
+                  <h5 class="card-title">Londres/Francia</h5>
+                  <p class="card-text">13 Noches (5 noches en Francia y 8 noches en Inglaterra)<br>Hotel 4 estrellas, con desayuno. <br> *2 excurciones a eleccion.</p>
+                  <a href="views/cotizaciones.html" class="btn btn-primary">Reservar</a>
+                </div>
+              </div>
+          </div>
+            <div class="col-12 col-md-3" data-aos="zoom-out">
+              <div class="card" style="width: 18rem;">
+                <img src="assets/img/roma4.jpg" class="card-img-top" alt="fontana di trevi">
+                <div class="card-body">
+                  <h5 class="card-title">España/Italia</h5>
+                  <p class="card-text">20 Noches (10 noches en España y 10 noches en Italia)<br>Hotel 4 estrellas, con desayuno.<br> *2 excurciones a eleccion.</p>
+                  <a href="views/cotizaciones.html" class="btn btn-primary">Reservar</a>
+                </div>
               </div>
             </div>
-            <div class="card" style="width: 18rem;">
-              <img src="assets/img/roma4.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">España/Italia</h5>
-                <p class="card-text">20 Noches (10 noches en España y 10 noches en Italia)<br>Hotel 4 estrellas, con desayuno.<br> *2 excurciones a eleccion.</p>
-                <a href="#" class="btn btn-primary">Reservar</a>
-              </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-              <img src="assets/img/paris3.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">España/Francia/Inglaterra</h5>
-                <p class="card-text">20 Noches (10 noches en España, 5 noches en Francia y 5 noches en Inglaterra)<br>Hotel 4 estrellas, con desayuno.</p>
-                <a href="#" class="btn btn-primary">Reservar</a>
+            <div class="col-12 col-md-3" data-aos="zoom-out">
+              <div class="card" style="width: 18rem;">
+                <img src="assets/img/paris3.jpg" class="card-img-top" alt="arco del triunfo">
+                <div class="card-body">
+                  <h5 class="card-title">España/Francia/Inglaterra</h5>
+                  <p class="card-text">20 Noches (10 noches en España, 5 noches en Francia y 5 noches en Inglaterra)<br>Hotel 4 estrellas, con desayuno.</p>
+                  <a href="views/cotizaciones.html" class="btn btn-primary">Reservar</a>
+                </div>
               </div>
             </div>
           </div>
@@ -173,6 +177,10 @@
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
   </body>
 </html>
